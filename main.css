@@ -106,12 +106,19 @@ footer {
   height: 35px;
 }
 
+footer a {
+  text-decoration: none;
+}
+
 footer .buttons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 footer .twitter {
@@ -152,12 +159,13 @@ footer .donacion:hover {
 }
 
 footer .button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   height: 100%;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 600;
   padding: 0.5em 2em;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;

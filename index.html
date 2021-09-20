@@ -56,10 +56,10 @@
     </div>
 
     <div class="audio" id="audio">
-      <audio src="./dist/Undertale - Megalovania.mp3" controls loop autoplay></audio>
+      <iframe src="./dist/audiofile.mp3" type="audio/mp3" allow="autoplay" id="audio" style="display:none"></iframe>
+      <audio src="./dist/Undertale - Megalovania.mp3" controls loop autoplay type="audio/mp3"></audio>
       <script>
         document.querySelector('audio').volume = 0.5;
-        document.getElementById('audio').play();
       </script>
     </div>
   </main>

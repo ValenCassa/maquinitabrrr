@@ -85,8 +85,8 @@ html ::-webkit-scrollbar {
 
 .hard {
   color: #25f025;
-  -webkit-animation: opacity 0.15s infinite;
-          animation: opacity 0.15s infinite;
+  -webkit-animation: opacity 0.3s infinite;
+          animation: opacity 0.3s infinite;
 }
 
 .audio {

@@ -18,13 +18,16 @@ html ::-webkit-scrollbar {
   display: none;
 }
 
-.chart-container {
-  position: relative;
-}
-
 .chart {
+  width: 50vw;
+  height: 400px !important;
   position: absolute;
   margin: 1.7em 1.7em;
+}
+
+.chart #tradingview_7d72a {
+  width: 100%;
+  height: 100%;
 }
 
 .maquinita {
@@ -194,6 +197,39 @@ footer .button svg {
   }
   to {
     opacity: 100%;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .video {
+    margin: unset;
+    margin-top: 23em;
+    right: 0;
+  }
+  main {
+    position: relative;
+    top: 9em;
+  }
+  footer {
+    width: 100%;
+    bottom: unset;
+  }
+  footer .buttons {
+    width: 100vw;
+    display: unset;
+  }
+  .chart {
+    margin: unset;
+    width: 100vw;
+  }
+  .maquinita-texto {
+    font-size: 60px;
+    margin-top: 6em;
+  }
+  .audio {
+    margin: unset;
+    margin-top: 76em;
+    margin-left: 2em;
   }
 }
 /*# sourceMappingURL=main.css.map */

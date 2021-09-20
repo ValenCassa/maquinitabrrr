@@ -55,7 +55,7 @@
         </video>
     </div>
 
-    <div class="audio">
+    <div class="audio" id="audio">
       <audio src="./dist/Undertale - Megalovania.mp3" controls loop autoplay></audio>
       <script>
         document.querySelector('audio').volume = 0.5;
@@ -103,6 +103,12 @@
 </body>
 
 
-
+<script>
+  document.addEventListener('click', musicPlay);
+function musicPlay() {
+    document.getElementById('audio').play();
+    document.removeEventListener('click', musicPlay);
+}
+</script>
 <script src="main.js"></script>
 </html>

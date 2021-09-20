@@ -4,7 +4,7 @@ var slider = document.getElementById('myRange');
 
 slider.oninput = function() {
     sliderValue = slider.value;
-    console.log(sliderValue);
+
     var text = document.getElementById('main');
     var maquinita = document.getElementById('maquinita');
     var r1 = document.querySelector('.r1');
@@ -21,7 +21,7 @@ slider.oninput = function() {
         document.querySelector('video').playbackRate = 0.1;
         r1.classList.remove('active');
     } else if (10 < sliderValue && sliderValue < 20) {
-        var audio = document.querySelector('audio').playbackRate = 1;
+        document.querySelector('audio').playbackRate = 1;
         document.querySelector('video').playbackRate = 0.4;
         text.className = '';
         r1.classList.add('active');
@@ -88,6 +88,10 @@ slider.oninput = function() {
         r7.classList.add('hard');
         r8.classList.add('hard');
 
+    }
+
+    if (sliderValue > 1) {
+        document.querySelector('audio').play();
     }
 
 };

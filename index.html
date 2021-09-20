@@ -100,15 +100,17 @@
       
     </div>
   </footer>
+
+  <script>
+    document.addEventListener('click', musicPlay);
+  function musicPlay() {
+      document.getElementById('audio').play();
+      document.removeEventListener('click', musicPlay);
+  }
+  </script>
 </body>
 
 
-<script>
-  document.addEventListener('click', musicPlay);
-function musicPlay() {
-    document.getElementById('audio').play();
-    document.removeEventListener('click', musicPlay);
-}
-</script>
+
 <script src="main.js"></script>
 </html>
